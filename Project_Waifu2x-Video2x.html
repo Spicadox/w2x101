@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waifu2x 101 Basic</title>
+    <link rel="icon" href="logo_mascot.png">
+    <link rel="stylesheet" href="Project_Waifu2x-CSS.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li class="home_icon"><a href="Project_Waifu2x-Home.html"><img id="home_logo" src="images/Artboard 1.png"
+                        alt="logo"> </a></li>
+            <li><a href="Project_Waifu2x-Home.html">Home</a></li>
+            <li><a href="Project_Waifu2x-Waifu2x.html">Waifu2x 101</a></li>
+            <li><a href="Project_Waifu2x-Waifu2xCaffe.html">Waifu2x-Caffe 101</a></li>
+            <li><a href="Project_Waifu2x-Video2x.html">Video2x 101</a></li>
+        </ul>
+    </nav>
+    <header class="home_header">
+        <h1 class="header_title">Video2x</h1>
+        <div class="header_content">
+            <p class="header_intro">
+                Video2x is a super-resolution imaging software with 1.9k stars on their <a
+                    href="https://github.com/k4yt3x/video2x">github repository</a>. Video2x utilizes other 3rd party
+                softwares as dependencies
+                like Waifu2x-Caffe, Waifu2x Converter CPP, Waifu2x NCNN Vulkan, SMRMD NCNN Vulkan, RealSR NCNN Vulkan,
+                and Anime4KCPP. It's true value lies in its ability to upscale and work with more media files. Not only
+                does Video2x work with images and gifs, but also video files.
+                This is possible because of its use of <a href="https://ffmpeg.org/">FFmpeg</a>, which is a very
+                powerful
+                media processor. Video2x uses FFMPEG to extract all image frames from a video and process each of the
+                frames in the upscaling process, and afterwards it reassembles all the image frames back into the video
+                container. Video2x offers both a GUI and CLI.
+            </p>
+            <figure class="header_figure">
+                <img src="images/Video2X Banner.png" alt="waifu2x-bg">
+                <figcaption>Video2x's Logo</figcaption>
+            </figure>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="introduction">
+                <h2 class="video2x_header">Video2x GUI</h2>
+                <!-- https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+                <div class="GUI_gallery">
+                    <div class="slides">
+                        <a href="video2x_GUI_main.png" target="_blank"><img src="images/video2x_GUI_main.png"
+                                alt="video2x_GUI_main"></a>
+
+                    </div>
+                    <div class="slides">
+                        <a href="video2x_GUI_driver.png" target="_blank"><img src="images/video2x_GUI_driver.png"
+                                alt="video2x_GUI_driver"></a>
+                    </div>
+                    <div class="slides">
+                        <a href="video2x_GUI_ffmpeg.png" target="_blank"><img src="images/video2x_GUI_ffmpeg.png"
+                                alt="video2x_GUI_ffmpeg"></a>
+                    </div>
+                    <div class="slides">
+                        <a href="video2x_GUI_gifski.png" target="_blank"><img src="images/video2x_GUI_gifski.png"
+                                alt="video2x_GUI_gifski"></a>
+                    </div>
+                    <div class="slides">
+                        <a href="video2x_GUI_tools.png" target="_blank"><img src="images/video2x_GUI_tools.png"
+                                alt="video2x_GUI_tools"></a>
+                    </div>
+
+                </div>
+                <p class="introduction_intro">
+                    Video2x has both a GUI and CLI. It's GUI may seem pretty intimidating to learn at first but if you
+                    have experience using other Waifu2x 3rd party softwares, then its not as hard to pick up.
+                    Video2x consist of multiple dependencies from other 3rd-party softwares like Waifu2x-Caffe and
+                    Waifu2x-CPP. It allows users to upscale a video while having the options to choose from a swath of
+                    Waifu2x implementations/algorithms.
+                    It's essentially an all-in-one Waifu2x software with the ability to even work with videos by using
+                    FFmpeg. The GUI also pulls up a CUI that allows users the verbose ability to see more detail on
+                    whats going on.
+                    <br>
+                    The current GUI 2.8.0 consist of the main screen, driver, FFmpeg, gifski, and tools settings.
+                </p>
+                <div class="video2x_GUI">
+                    <h3>Main Settings</h3>
+                    <p>
+                        The main settings consist of configuring the input and output settings, express settings, and
+                        output progress.
+                        The input and output selection allows for files to be dragged in or selected manually. It also
+                        always for a pretty customizable output file name by allowing users to specify the format
+                        string. Last it has the other paths selection which allows users tos pecify the yaml file path
+                        and cache folder path. THe cache folder contains the frames that have been extracted and the
+                        frames that are currently being processed which will be removed after the video has been
+                        upscaled, but this folder can be preserved if the "Preserve Frames" has been checked off in the
+                        express settings.
+                        <br>The express settings section allows users to select the driver implementation, number of
+                        processes to be used, upscale ratio, the output width and height, image
+                        and video output extension, and preserve frames option. The higher the processes the faster the
+                        upscaling speed, but it has had a lot of
+                        problems in the past so its reccommeded at 1. Users are given the option to specify a specific
+                        output width and height, or use a scale ratio. The image output can be specified for the
+                        extention of the frames that are being processed and the video extension can also be specified
+                        for the final video output extension. Lastly, the preserve frames can be checked to get the
+                        image frames that have been extracted and upscaled instead of being deleted along with the cache
+                        folder. <br> Lastly users are able to get a preview of each invidiual frames as its being
+                        upscaled in the frame preview panel. Users are also able to view the current video upscale
+                        progress which displays the total time elapsed, time remaining, FPS, frames and overall process.
+                    </p>
+                    <h3>Driver Settings</h3>
+                    <p>
+                        The driver settings contain a plethora of super resolution implementations. It consist of
+                        Waifu2x_Caffe, Waifu2x Converter CPP, Waifu2x NCNN Vulkan, SRMD NCNN Vulkan, RealSR NCNN Vulkan,
+                        and Anime4k CPP. In order to use these drivers, it must be installed either seperately or from
+                        Video2x's installation process as dependencies. Each driver settings are unique to the drivers
+                        itself and more information can be found on each of the drivers own site.
+                    </p>
+                    <h3>FFmpeg Settings</h3>
+                    <p>
+                        The FFmpeg settings contains the global options, frame extract, video assembly, and streams
+                        migration settings.
+                        It is reccommended that you understand FFmpeg before changing information in this section. The
+                        most important section would be the frame extraction, video assembly, and streams migration
+                        sections.The frame extraction section allows users to select the pixel format for the frames and
+                        it defaults to rgb24. The video assembly section contains the settings for the video format when
+                        the upscaled frames are being assembled. It allows users to select the video codec, pixel
+                        format, CRF, and other miscellaneous settings. Lastly the streams migration settings allows
+                        users to specify video, audio, and data stream mapping.
+                    </p>
+                    <h3>Gifski Settings</h3>
+                    <p>The Gifski settings makes use of <a href="https://gif.ski/">Gifski</a>, a great software for gif
+                        encoding. The main interest in this setting is to specify the quality, where users can specify
+                        the gif quality.
+                    </p>
+                    <h3>Tools Settings</h3>
+                    <p>
+                        The last settings is the tools settings which involves <a
+                            href="https://ffmpeg.org/ffprobe.html">FFprobe</a>. This allows users to use FFprobe without
+                        going through the CLI. All the user has to do is drag the video into the box in order to obtain
+                        a plethora of information about the video.
+                    </p>
+                </div>
+                <!-- Add js for magnification -->
+            </div>
+            <div class="video_examples">
+                <div class="video_upscale_example">
+                    <h2></h2>
+                </div>
+                <div class="video_denoise_example">
+
+                </div>
+                <div class="video_upscale_denoise_example">
+                    <div class="example_videos">
+                        <h2 class="dbz_example_header">Dragon Ball Z Opening Upscale & Denoise Example</h2>
+                        <div class="dbz_source_example">
+
+                            <h3 class="video_source_header">Source Video: 360p</h3>
+                            <video src="videos/Dragon Ball Z Opening (Japanese-Creditless) HQ-ElqB359i_Os.mp4" controls
+                                id="dbz_source" id="dbz_source">Source Video</video>
+
+                        </div>
+                        <div class="dbz_examples">
+                            <h3 class="video_example_header">New Videos Upscaled using Waifu2x NCNN Vulkan at 1080p</h3>
+                            <video
+                                src="videos/Vulkan/Vulkan x3 N0/Dragon Ball Z Opening (Japanese-Creditless) HQ-ElqB359i_Os_output.mp4"
+                                controls>3x Upscale and Denoise Level 0</video>
+                            <p class="video_info">3x Upscale and Denoise Level 0</p>
+                            <video
+                                src="videos/Vulkan/Vulkan x3 N1/Dragon Ball Z Opening (Japanese-Creditless) HQ-ElqB359i_Os_output.mp4"
+                                controls>3x Upscale and Denoise Level 1</video>
+                            <p class="video_info">3x Upscale and Denoise Level 1</p>
+                            <video
+                                src="videos/Vulkan/Vulkan x3 N2/Dragon Ball Z Opening (Japanese-Creditless) HQ-ElqB359i_Os_output.mp4"
+                                controls>3x Upscale and Denoise Level 2</video>
+                            <p class="video_info">3x Upscale and Denoise Level 2</p>
+                            <video
+                                src="videos/Vulkan/Vulkan x3 N3/Dragon Ball Z Opening (Japanese-Creditless) HQ-ElqB359i_Os_output.mp4"
+                                controls>3x Upscale and Denoise Level 3</video>
+                            <p class="video_info">3x Upscale and Denoise Level 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
