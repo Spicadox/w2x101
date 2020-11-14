@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waifu2x 101 Basic</title>
+    <link rel="icon" href="logo_mascot.png">
+    <link rel="stylesheet" href="Project_Waifu2x-CSS.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li class="home_icon"><a href="Project_Waifu2x-Home.html"><img id="home_logo" src="images/Artboard 1.png"
+                        alt="logo"> </a></li>
+            <li><a href="Project_Waifu2x-Home.html">Home</a></li>
+            <li><a href="Project_Waifu2x-Waifu2x.html">Waifu2x 101</a></li>
+            <li><a href="Project_Waifu2x-Waifu2xCaffe.html">Waifu2x-Caffe 101</a></li>
+            <li><a href="Project_Waifu2x-Video2x.html">Video2x 101</a></li>
+        </ul>
+    </nav>
+    <header class="home_header">
+        <h1 class="header_title">Super-Resolution Imaging</h1>
+        <div class="header_content">
+            <p class="header_intro">
+                Super-resolution imaging is the process of recovering a high-resolution (HR) image from a low-resolution
+                (LR) image. It's essentially using deep convolutional neural networks in deep learning to upscale
+                images.
+                The basic idea is to make an imagine look better, whether it is done by making the image bigger,
+                improving image quality, or removing noises. There are many softwares out there that does something like
+                that without
+                the user even knowing! Popular upscaling softwares include GIMP, Photoshop, Gigapixel AI, and Waifu2x.
+                Of those popular upscalers, Gigapixel AI is arguable one of the best paid software for upscaling, while
+                Waifu2x is the best free alternative.
+                This site will be talking about Waifu2x and the alternatives based on Waifu2x.
+            </p>
+            <figure class="header_figure">
+                <img src="images/nvidia-upscaling-lizard.png" alt="nvidia-upscaling-lizard">
+                <figcaption>Traditional Upscaling vs AI Upscaling</figcaption>
+            </figure>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="upscale">
+                <h1 class="upscale_header">What is Upscaling?</h1>
+                <div class="upscale_content">
+                    <p>Upscaling is a technique used to obtain a higher resolution video or image by converting a lower
+                        resolution media to a higher resolution media.
+                        Traditional upscaling doesn't necessarily generate a higher quality of that media(video or
+                        image), in fact it could generate a media with even worse quality as all a upscaler needs to
+                        accomplish is to enlarge it to
+                        the user's specified resolution. The basic requirement to qualify as a upscaler is to just have
+                        a low resolution media fill up said resolution on your monitor.
+                        With the advancement of AI and the popularity of machine learning,
+                        <a href="https://machinelearningmastery.com/what-is-deep-learning/">deep learning</a>
+                        (a subfield of machine learning) became extremely popular for upscaling softwares. To understand
+                        how deep learning enhances
+                        upscaling quality the information can be obtained from this
+                        <a
+                            href="https://medium.com/beyondminds/an-introduction-to-super-resolution-using-deep-learning-f60aff9a499d">Medium
+                            article</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="resolutions_container">
+                <h2 class="resolution_header">List of Video Resolutions</h2>
+                <div class="resolutions_content">
+                    <ul class="resolution_list">
+                        <li>240p = 426x240</li>
+                        <li>360p = 640x360</li>
+                        <li>480p = 854x480</li>
+                        <li>720p = 1280x720</li>
+                        <li>1080p = 1920x1080</li>
+                        <li>1440p = 2560x1440</li>
+                        <li>2160p or 4K = 3840x2160</li>
+                        <li>8k or 4320p = 7680x4320</li>
+                    </ul>
+                    <figure class="resolution_figure">
+                        <img src="images/video_resolutions.jpg" alt="video_resolutions">
+                        <figcaption>Video Resolution Chart</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="denoise_container">
+                <h1 class="denoise_header">What is Denoising?</h1>
+                <div class="denoise_content">
+                    <p>Denoising is the process of removing noise from a media(video or image).</p>
+                    <p>A formal definiton for image noise is the random variation of brightness or color information in
+                        images, and is usually an aspect of electronic noise.
+                        It's essentially the grainy looking veil obscuring the picture making it look awful.
+                    </p>
+                    <figure class="denoise_figure">
+                        <img src="images/noise_example.jpg" alt="periodic_noise_example">
+                        <figcaption>Example of periodic noise(a type of interference noise) on the left.
+                            <br>Image via
+                            <a
+                                href="https://www.premiumbeat.com/blog/understanding-film-video-image-noise/">PremiumBeat.</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="softwares_container">
+                <h1 class="softwares_header">Waifu2x and Gigapixel AI</h1>
+                <div class="softwares_content">
+                    <p>
+                        Having gone through basic ideas of upscaling and denoising to get that perfect image, what
+                        softwares provide great upscaling and denoising?
+                        Both <a href="https://github.com/nagadomi/waifu2x">Waifu2x</a> and 
+                        <a href="https://topazlabs.com/gigapixel-ai/">Gigapixel AI</a> are great contenders for being
+                        the
+                        best softwares to achieve great looking images via super-resolution imaging. So, what's the
+                        difference between the two?
+                    </p>
+                    <div class="comparison">
+                        <div class="gigapixel_container">
+                            <figure class="gigapixel_figure">
+                                <img src="images/G-icon-png.png" alt="gigapixel icon">
+                                <figcaption>Gigapixel AI</figcaption>
+                            </figure>
+                            <ul class="gigapixel_list">
+                                <li>Paid Software</li>
+                                <li>Best for 3D images</li>
+                                <li>Limited to supporting up to 600x scale</li>
+                                <li>The software only supports Window and Mac OS</li>
+                                <li>Learning curve for using the software is smaller due to its intuitive GUI</li>
+                            </ul>
+                        </div>
+                        <div class="waifu2x_container">
+                            <figure class="waifu2x_figure">
+                                <img src="images/bg.png" alt="waifu2x icon">
+                                <figcaption>Waifu2x</figcaption>
+                            </figure>
+                            <ul class="waifu2x_list">
+                                <li>Open-source and free</li>
+                                <li>Best for 2D images</li>
+                                <li>Limited to supporting up to 2x scale</li>
+                                <li>The demo application works on every platform, but the actual software is only
+                                    available on Linux</li>
+                                <li>CLI based and so has a much higher learning curve to use the software</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="software_contents2">
+                        <h2>Gigapixel AI the Clear Winner?</h2>
+                        <p>There's a pretty good reason why Gigapixel AI is a paid software as it is a pretty great software overall. The greatest difference between the two would be the type of images it works best with; Gigapixel AI
+                            working better with 3D images or photography, while Waifu2x works best with 2D images or hand drawn images. Waifu2x has a demo application hosted on their website so platform compatibility isn't as big a concern.
+                            The Waifu2x site also has a simple yet limited interface if user's don't want to get into working with the command line interface(CLI). 
+                            <br><br>A temporary solution to Waifu2x's weakness is to use their website, but the best and greatest thing about Waifu2x is the fact that it's a free open source project! In short there are many third party softwares based
+                            off Waifu2x, thus solving many of it's inherent limitations. Popular third-party softwares/projects based off Waifu2x includes 
+                            Waifu2x-Caffe, Waifu2x-Converter-CPP, Waifu2x-NCNN-Vulkan, Anime4K, Video2x, Dandere2x, and the list goes on! 
+                            <br><br>In short if Waifu2x falls short of what satisfies your needs, then other third-party softwares/projects 
+                            will do just as well, if not better! It should be noted that Waifu2x's last release was in 2018, which is why many third-party softwares/projects are generally recommended over Waifu2x.
+                            Popular third-party softwares include Waifu2x-Caffe, Waifu2x-NCNN-Vulkan, Waifu2x-Converter-CPP, and Video2x. 
+                            <br><br>This website will go over a more basic overview of Waifu2x, Waifu2x-Caffe, and Video2x with examples and comparisons.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
