@@ -5,8 +5,17 @@ html, address, head, header, footer, body {
 }
 
 nav {
-    /* background-color: lightpink; */
     background: linear-gradient(113.22317973099643deg, rgba(246, 245, 245,1) 4.775390625%,rgba(220, 220, 220,1) 98.13476562499999%);
+   
+}
+footer {
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+    max-height: 100px;
+    /* background: rgb(184,184,184); */
+background: linear-gradient(90deg, rgba(184,184,184,1) 0%, rgba(157,157,157,1) 100%);
+background: linear-gradient(45deg, rgba(233,233,233,1) 0%,rgba(218,218,218,1) 10%,rgba(189,189,189,1) 47%,rgba(184,184,184,1) 59%,rgba(195,195,195,1) 71%,rgba(175,175,175,1) 84%,rgba(152,152,152,1) 100%);
 }
 
 ul {
@@ -15,7 +24,6 @@ ul {
     justify-content: flex-end;
     padding: 0;
     margin: 0;
-    
     /* margin-right: 100px; */
 }
 li {
@@ -27,27 +35,47 @@ li {
     text-align: right; 
 }
 .menu li {
-    padding: 5px;
     display: inline-flex;
+    margin-inline-end: 50px;
+
+    /* justify-content: center; */
     /* background-color: fuchsia; */
     /* http://ourownthing.co.uk/gradpad.html# */
     /* background: linear-gradient(113.22317973099643deg, rgba(246, 245, 245,1) 4.775390625%,rgba(220, 220, 220,1) 98.13476562499999%); */
     /* border-style: ridge; */
     
 }
-.menu li a {
-    padding: 5px;
-    padding-inline-end: 50px;
+.menu li:not(:first-child) {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.menu li:first-child {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.menu li:not(:first-child) a {
+    padding: 15px;
+    line-height: 100%;
+    /* min-width: 10px;
+    max-width: 175px; */
+    /* margin-inline-end: 50px; */
     text-decoration: none;
     font-family: fantasy;
-    font-size: x-large; 
+    font-size: 25px; 
     color: black;
 }
+.menu li:hover:not(:first-child) a{
+    background-color: silver;
+    border-radius: 10px;
+}
+
 .home_icon {
     margin-right: auto;
 }
 #home_logo {
-    max-width: 100px;
+    max-width: 150px;
     max-height: auto;
 }
 header {
@@ -106,6 +134,7 @@ h3 {
 .container {
     display: flex;
     justify-content: center;
+
 
 }
 .content {
@@ -223,6 +252,14 @@ h3 {
     max-width: 218px;
     height: auto;  
 }
+#juxtapose2 {
+    max-width: 300px;
+    max-height: 300px;
+}
+.jx-slider {
+    max-width: 218px;
+    max-height: 231px;
+}
 /* .cafee_upscale_denoise_examples {
     max-width: auto;
     display: flex;
@@ -259,21 +296,42 @@ h3 {
   .GUI_gallery {
       display: flex;
       flex-wrap: wrap;
-
   }
   .slides {
+      display: flex;
+      flex-direction: column;
       width: 20%;
   }
   .slides img {
-      width: 100%;
+      width: 50%;
   }
-
+  .bx-controls-direction, .bx-pager {
+      width: 45%;
+      display: flex;
+      justify-content: space-around;
+  }
+  .bx-controls-direction a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .bx-controls-direction a:hover {
+      background-color: silver;
+  }
+  #id_pager {
+      margin-top: -32px;
+  }
 .dbz_source_example {
     display: flex;
     flex-direction: column;
     align-content: center;
     border: 30px inset #FF6926;
-border-radius: 40px 40px 40px 40px;
+    border-radius: 40px 40px 40px 40px;
 }
   #dbz_source {
       max-width: 640px;
@@ -287,7 +345,7 @@ border-radius: 40px 40px 40px 40px;
     align-content: center;
     margin-top: 20px;
     border: 30px inset #FF6926;
-border-radius: 40px 40px 40px 40px;
+    border-radius: 40px 40px 40px 40px;
 }
   .dbz_examples video {
     max-width: 1000px;
