@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waifu2x 101 Basic</title>
     <link rel="icon" href="logo_mascot.png">
     <link rel="stylesheet" href="Project_Waifu2x-CSS.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
-<link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
-    <script src="test.js"></script>
 </head>
-
 <body>
     <nav class="menu">
         <ul>
@@ -153,12 +147,12 @@
                         and a contributor to Waifu2x-caffe.
                         It should be noted that TTA mode takes 8x as long for the entire upscaling process to finish. In
                         my personal
+                        experience I have not been able to find any noticeable difference between an imaged upscaled in
                         experience I have not been able to find any noticeable difference between an image upscaled in
                         TTA
                         mode and one not in TTA mode.
                     </p>
                     <!-- Insert tta examples -->
-                    <div id="juxtapose">
                     <figure class="tta_fig_example">
                         <div class="tta_fig_example_source">
                             <img src="assets/images/firefox/download.jfif" alt="download">
@@ -173,23 +167,6 @@
                             <figcaption>Level 1 noise, 1x scale, and with TTA mode</figcaption>
                         </div>
                     </figure>
-                </div>
-                <div class="juxtapose_menu">
-                    <label for="ff_menu1">Before</label>
-                    <select name="ff_menu1" id="ff_menu1">
-                        <option value="assets/images/firefox/download.jfif">Source Image</option>
-                        <option value="assets/images/firefox/download(CUnet)(noise_scale)(Level1)(x1.000000).jpg">Without TTA</option>
-                        <option value="assets/images/firefox/download(CUnet)(noise_scale)(Level1)(tta)(x1.000000).jpg">With TTA</option>
-                    </select>
-
-                    <label for="ff_menu2">After</label>
-                    <select name="ff_menu2" id="ff_menu2">
-                        <option value="assets/images/firefox/download.jfif">Source Image</option>
-                        <option value="assets/images/firefox/download(CUnet)(noise_scale)(Level1)(x1.000000).jpg">Without TTA</option>
-                        <option value="assets/images/firefox/download(CUnet)(noise_scale)(Level1)(tta)(x1.000000).jpg">With TTA</option>
-                    </select>
-                </div>
-                <div id="juxtapose2"></div>
                 </div>
                 <div class="other_settings">
                     <h3 class="other_settings_header">Other Settings</h3>

@@ -252,14 +252,7 @@ h3 {
     max-width: 218px;
     height: auto;  
 }
-#juxtapose2 {
-    max-width: 300px;
-    max-height: 300px;
-}
-.jx-slider {
-    max-width: 218px;
-    max-height: 231px;
-}
+
 /* .cafee_upscale_denoise_examples {
     max-width: auto;
     display: flex;
@@ -303,9 +296,9 @@ h3 {
       width: 20%;
   }
   .slides img {
-      width: 50%;
+      width: 100%;
   }
-  .bx-controls-direction, .bx-pager {
+  /* .bx-controls-direction, .bx-pager {
       width: 45%;
       display: flex;
       justify-content: space-around;
@@ -322,7 +315,7 @@ h3 {
   }
   .bx-controls-direction a:hover {
       background-color: silver;
-  }
+  } */
   #id_pager {
       margin-top: -32px;
   }

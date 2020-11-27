@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +7,10 @@
     <link rel="icon" href="logo_mascot.png">
     <link rel="stylesheet" href="Project_Waifu2x-CSS.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-    <script src="Project_Waifu2x-JS.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="test.js"></script>
 </head>
-
 <body>
     <nav class="menu">
         <ul>
@@ -50,32 +49,29 @@
             <div class="introduction">
                 <h2 class="video2x_header">Video2x GUI</h2>
                 <!-- https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
-                <div class="introduction_intro">
-                <div class="bxslider">
+                <div class="GUI_gallery">
                     <div class="slides">
-                        <a href="assets/images/video2x_GUI_main.png" target="_blank"><img src="assets/images/video2x_GUI_main.png"
-                                alt="video2x_GUI_main" title="Video2x GUI's Main Screen"></a>
-
+                        <a href="assets/images/video2x_GUI_main.png" target="_blank" title="Main Screen"><img src="assets/images/video2x_GUI_main.png"
+                                alt="video2x_GUI_main"></a>
                     </div>
                     <div class="slides">
-                        <a href="assets/images/video2x_GUI_driver.png" target="_blank"><img src="assets/images/video2x_GUI_driver.png"
-                                alt="video2x_GUI_driver" title="Video2x GUI's Driver Screen"></a>
+                        <a href="assets/images/video2x_GUI_driver.png" target="_blank" title="Driver Settings"><img src="assets/images/video2x_GUI_driver.png"
+                                alt="video2x_GUI_driver"></a>
                     </div>
                     <div class="slides">
-                        <a href="assets/images/video2x_GUI_ffmpeg.png" target="_blank"><img src="assets/images/video2x_GUI_ffmpeg.png"
-                                alt="video2x_GUI_ffmpeg" title="Video2x GUI's FFmpeg Screen"></a>
+                        <a href="assets/images/video2x_GUI_ffmpeg.png" target="_blank" title="FFmpeg Settings"><img src="assets/images/video2x_GUI_ffmpeg.png"
+                                alt="video2x_GUI_ffmpeg"></a>
                     </div>
                     <div class="slides">
-                        <a href="assets/images/video2x_GUI_gifski.png" target="_blank"><img src="assets/images/video2x_GUI_gifski.png"
-                                alt="video2x_GUI_gifski" title="Video2x GUI's Gifski Screen"></a>
+                        <a href="assets/images/video2x_GUI_gifski.png" target="_blank" title="Gifski Settings"><img src="assets/images/video2x_GUI_gifski.png"
+                                alt="video2x_GUI_gifski"></a>
                     </div>
                     <div class="slides">
-                        <a href="assets/images/video2x_GUI_tools.png" target="_blank"><img src="assets/images/video2x_GUI_tools.png"
-                                alt="video2x_GUI_tools" title="Video2x GUI's Tool Screen"></a>
+                        <a href="assets/images/video2x_GUI_tools.png" target="_blank" title="Tools Screen"><img src="assets/images/video2x_GUI_tools.png"
+                                alt="video2x_GUI_tools"></a>
                     </div>
                 </div>
-                <p id="id_pager"></p>
-                <p>
+                <p class="introduction_intro">
                     Video2x has both a GUI and CLI. It's GUI may seem pretty intimidating to learn at first but if you
                     have experience using other Waifu2x 3rd party softwares, then its not as hard to pick up.
                     Video2x consist of multiple dependencies from other 3rd-party softwares like Waifu2x-Caffe and
@@ -87,7 +83,6 @@
                     <br>
                     The current GUI 2.8.0 consist of the main screen, driver, FFmpeg, gifski, and tools settings.
                 </p>
-            </div>
                 <div class="video2x_GUI">
                     <h3>Main Settings</h3>
                     <p>
@@ -153,7 +148,6 @@
                     <h2></h2>
                 </div>
                 <div class="video_denoise_example">
-
                 </div>
                 <div class="video_upscale_denoise_example">
                     <div class="example_videos">
@@ -162,6 +156,7 @@
 
                             <h3 class="video_source_header">Source Video: 360p</h3>
                             <video src="assets/videos/Dragon Ball Z Opening (Japanese-Creditless) HQ-ElqB359i_Os.mp4" controls
+                                id="dbz_source" id="dbz_source">Source Video</video>
                                 id="dbz_source">Source Video</video>
 
                         </div>
@@ -187,7 +182,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </body>
