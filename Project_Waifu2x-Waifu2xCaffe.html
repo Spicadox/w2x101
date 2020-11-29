@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waifu2x 101 Basic</title>
     <link rel="icon" href="logo_mascot.png">
     <link rel="stylesheet" href="Project_Waifu2x-CSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/css/magnify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify-mobile.min.js">
+    <link href="floating-totop-button.min.css" rel="stylesheet" />
+    <script src="floating-totop-button.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnify/2.3.3/js/jquery.magnify.min.js"></script>
+
+    <script src="Project_Waifu2x-Waifu2xCaffe.js"></script>
 </head>
+
 <body>
     <nav class="menu">
         <ul>
@@ -26,7 +36,7 @@
                 off of Waifu2x. For those wondering what Caffe in Waifu2x-caffe means, <a
                     href="https://www.nvidia.com/en-au/data-center/gpu-accelerated-applications/caffe/">Caffe</a> is the
                 deep learning framework and so Waifu2x-caffe is just the Caffe version of the original Waifu2x software.
-                What sets Wafi2x-caffe from other 3rd-party softwares is that it utilizes <a
+                What sets Waifu2x-caffe from other 3rd-party softwares is that it utilizes <a
                     href="https://www.infoworld.com/article/3299703/what-is-cuda-parallel-programming-for-gpus.html">CUDA</a>(available
                 with only NVIDIA GPUs) and <a href="https://developer.nvidia.com/cudnn">cuDNN</a> for
                 faster and higher quality upscaling. With the new releases of the RTX 3000s, the amount of CUDA cores
@@ -45,7 +55,7 @@
     <div class="container">
         <div class="content">
             <div class="introduction">
-                <h2 class="introduction_header">Waifu2x-Caffe's GUI and CUI</h2>
+                <h1 class="introduction_header">Waifu2x-Caffe's GUI and CUI</h1>
                 <figure class="introduction_figure">
                     <img src="assets/images/waifu2x-caffe_gui.png" alt="waifu2x-caffe_gui">
                 </figure>
@@ -61,7 +71,7 @@
                         respository page</a>.
                 </p>
                 <br>
-                <h2>Waifu2x-Caffe's GUI Overview</h2>
+                <h1>Waifu2x-Caffe's GUI Overview</h1>
                 <p>
                     Waifu2x-Caffe can support a single input, whether it's just one image or an entire folder with
                     multiple images. It supports various file extensions as seen in the image, but it does not support
@@ -155,15 +165,20 @@
                     <!-- Insert tta examples -->
                     <figure class="tta_fig_example">
                         <div class="tta_fig_example_source">
-                            <img src="assets/images/firefox/download.jfif" alt="download">
+                            <a href="assets/images/firefox/download.jfif">
+                            <img src="assets/images/firefox/download.jfif" class="zoom" alt="download"></a>
                             <figcaption>Source Image</figcaption>
                         </div>
                         <div class="tta_fig_example_non_tta">
-                            <img src="assets/images/firefox/download(CUnet)(noise_scale)(Level1)(x1.000000).jpg" alt="download1">
+                            <a href="assets/images/firefox/download(CUnet)(noise_scale)(Level1)(x1.000000).jpg">
+                            <img src="assets/images/firefox/download(CUnet)(noise_scale)(Level1)(x1.000000).jpg" class="zoom"
+                                alt="download1"></a>
                             <figcaption>Level 1 noise, 1x scale, and without TTA mode</figcaption>
                         </div>
                         <div class="tta_fig_example_TTA">
-                            <img src="assets/images/firefox/download(CUnet)(noise_scale)(Level1)(tta)(x1.000000).jpg" alt="download2">
+                            <a href="assets/images/firefox/download(CUnet)(noise_scale)(Level1)(tta)(x1.000000).jpg">
+                            <img src="assets/images/firefox/download(CUnet)(noise_scale)(Level1)(tta)(x1.000000).jpg" class="zoom"
+                                alt="download2"></a>
                             <figcaption>Level 1 noise, 1x scale, and with TTA mode</figcaption>
                         </div>
                     </figure>
@@ -188,16 +203,21 @@
                     <div class="cafee_upscale_examples">
                         <h2 class="example_header">Only Upscale Examples</h2>
                         <figure class="source_image">
-                            <img src="assets/images/uncc/uncc logo/uncc_logo.jpg" alt="origin">
+                            <a href="assets/images/uncc/uncc logo/uncc_logo.jpg">
+                            <img src="assets/images/uncc/uncc logo/uncc_logo.jpg" class="zoom" alt="origin"></a>
                             <figcaption>Source Image</figcaption>
                         </figure>
                         <div class="upscale_result">
                             <figure>
-                                <img src="assets/images/uncc/uncc logo/upscale/uncc_logo(CUnet)(scale)(x2.000000).jpg" alt="">
+                                <a href="assets/images/uncc/uncc logo/upscale/uncc_logo(CUnet)(scale)(x2.000000).jpg">
+                                <img src="assets/images/uncc/uncc logo/upscale/uncc_logo(CUnet)(scale)(x2.000000).jpg" class="zoom"
+                                    alt=""></a>
                                 <figcaption>2x Upscale</figcaption>
                             </figure>
                             <figure>
-                                <img src="assets/images/uncc/uncc logo/upscale/uncc_logo(CUnet)(scale)(tta)(x2.000000).jpg" alt="">
+                                <a href="assets/images/uncc/uncc logo/upscale/uncc_logo(CUnet)(scale)(tta)(x2.000000).jpg">
+                                <img src="assets/images/uncc/uncc logo/upscale/uncc_logo(CUnet)(scale)(tta)(x2.000000).jpg" class="zoom"
+                                    alt=""></a>
                                 <figcaption>x2 Upscale and TTA</figcaption>
                             </figure>
                         </div>
@@ -205,24 +225,33 @@
                     <div class="cafee_denoise_examples">
                         <h2 class="example_header">Only Denoising Examples</h2>
                         <figure class="source_image">
-                            <img src="assets/images/uncc/uncc logo/uncc_logo.jpg" alt="origin">
+                            <a href="assets/images/uncc/uncc logo/uncc_logo.jpg">
+                            <img src="assets/images/uncc/uncc logo/uncc_logo.jpg" class="zoom" alt="origin"></a>
                             <figcaption>Source Image</figcaption>
                         </figure>
                         <div class="denoise_result">
                             <figure>
-                                <img src="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level0).jpg" alt="">
+                                <a href="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level0).jpg">
+                                <img src="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level0).jpg" class="zoom"
+                                    alt=""></a>
                                 <figcaption>Denoise Level 0</figcaption>
                             </figure>
                             <figure>
-                                <img src="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level1).jpg" alt="">
+                                <a href="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level1).jpg">
+                                <img src="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level1).jpg" class="zoom"
+                                    alt=""></a>
                                 <figcaption>Denoise Level 1</figcaption>
                             </figure>
                             <figure>
-                                <img src="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level2).jpg" alt="">
+                                <a href="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level2).jpg">
+                                <img src="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level2).jpg" class="zoom"
+                                    alt=""></a>
                                 <figcaption>Denoise Level 2</figcaption>
                             </figure>
                             <figure>
-                                <img src="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level3).jpg" alt="">
+                                <a href="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level3).jpg">
+                                <img src="assets/images/uncc/uncc logo/denoise/uncc_logo(CUnet)(noise)(Level3).jpg" class="zoom"
+                                    alt=""></a>
                                 <figcaption>Denoise Level 3</figcaption>
                             </figure>
                         </div>
@@ -230,28 +259,33 @@
                     <div class="cafee_upscale_denoise_examples">
                         <h2 class="example_header">Upscale & Denoising Examples</h2>
                         <figure class="source_image">
-                            <img src="assets/images/uncc/uncc logo/uncc_logo.jpg" alt="origin">
+                            <a href="assets/images/uncc/uncc logo/uncc_logo.jpg">
+                            <img src="assets/images/uncc/uncc logo/uncc_logo.jpg" class="zoom" alt="origin"></a>
                             <figcaption>Source Image</figcaption>
                         </figure>
                         <div class="upscale_denoise_result">
                             <figure>
-                                <img src="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level0)(x2.000000).jpg"
-                                    alt="">
+                                <a href="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level0)(x2.000000).jpg">
+                                <img src="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level0)(x2.000000).jpg" class="zoom"
+                                    alt=""></a>
                                 <figcaption>2x Upscale and Denoise Level 0</figcaption>
                             </figure>
                             <figure>
-                                <img src="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level1)(x2.000000).jpg"
-                                    alt="">
+                                <a href="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level1)(x2.000000).jpg">
+                                <img src="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level1)(x2.000000).jpg" class="zoom"
+                                    alt=""></a>
                                 <figcaption>2x Upscale and Denoise Level 1</figcaption>
                             </figure>
                             <figure>
-                                <img src="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level2)(x2.000000).jpg"
-                                    alt="">
+                                <a href="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level2)(x2.000000).jpg">
+                                <img src="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level2)(x2.000000).jpg" class="zoom"
+                                    alt=""></a>
                                 <figcaption>2x Upscale and Denoise Level 2</figcaption>
                             </figure>
                             <figure>
-                                <img src="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level3)(x2.000000).jpg"
-                                    alt="">
+                                <a href="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level3)(x2.000000).jpg">
+                                <img src="assets/images/uncc/uncc logo/upscale - denoise/uncc_logo(CUnet)(noise_scale)(Level3)(x2.000000).jpg" class="zoom"
+                                    alt=""></a>
                                 <figcaption>2x Upscale and Denoise Level 3</figcaption>
                             </figure>
                         </div>
@@ -260,4 +294,11 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div>
+            <p class="copyright"><small>&copy; Copyright 2020 W2X101</small></p>
+        </div>
+    </footer>
 </body>
+
+</html>

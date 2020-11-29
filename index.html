@@ -7,6 +7,12 @@
     <title>Waifu2x 101 Basic</title>
     <link rel="icon" href="logo_mascot.png">
     <link rel="stylesheet" href="Project_Waifu2x-CSS.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Signika&family=Comic+Neue&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="floating-totop-button.min.css" rel="stylesheet" />
+    <script src="floating-totop-button.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -20,11 +26,12 @@
             <li><a href="Project_Waifu2x-Video2x.html">Video2x 101</a></li>
         </ul>
     </nav>
+
     <header class="home_header">
-        <h1 class="header_title">Super-Resolution Imaging</h1>
+        <h1 class="header_title">Super-Resolution</h1>
         <div class="header_content">
             <p class="header_intro">
-                Super-resolution imaging is the process of recovering a high-resolution (HR) image from a low-resolution
+                Super-resolution is the process of recovering a high-resolution (HR) image from a low-resolution
                 (LR) image. It's essentially using deep convolutional neural networks in deep learning to upscale
                 images.
                 The basic idea is to make an imagine look better, whether it is done by making the image bigger,
@@ -92,7 +99,7 @@
                         It's essentially the grainy looking veil obscuring the picture making it look awful.
                     </p>
                     <figure class="denoise_figure">
-                        <img src="assets/images/noise_example.jpg" alt="periodic_noise_example">
+                        <img id="noise_example" src="assets/images/noise_example.jpg" alt="periodic_noise_example">
                         <figcaption>Example of periodic noise(a type of interference noise) on the left.
                             <br>Image via
                             <a
@@ -107,7 +114,7 @@
                     <p>
                         Having gone through basic ideas of upscaling and denoising to get that perfect image, what
                         softwares provide great upscaling and denoising?
-                        Both <a href="https://github.com/nagadomi/waifu2x">Waifu2x</a> and 
+                        Both <a href="https://github.com/nagadomi/waifu2x">Waifu2x</a> and
                         <a href="https://topazlabs.com/gigapixel-ai/">Gigapixel AI</a> are great contenders for being
                         the
                         best softwares to achieve great looking images via super-resolution imaging. So, what's the
@@ -144,16 +151,30 @@
                     </div>
                     <div class="software_contents2">
                         <h2>Gigapixel AI the Clear Winner?</h2>
-                        <p>There's a pretty good reason why Gigapixel AI is a paid software as it is a pretty great software overall. The greatest difference between the two would be the type of images it works best with; Gigapixel AI
-                            working better with 3D images or photography, while Waifu2x works best with 2D images or hand drawn images. Waifu2x has a demo application hosted on their website so platform compatibility isn't as big a concern.
-                            The Waifu2x site also has a simple yet limited interface if user's don't want to get into working with the command line interface(CLI). 
-                            <br><br>A temporary solution to Waifu2x's weakness is to use their website, but the best and greatest thing about Waifu2x is the fact that it's a free open source project! In short there are many third party softwares based
-                            off Waifu2x, thus solving many of it's inherent limitations. Popular third-party softwares/projects based off Waifu2x includes 
-                            Waifu2x-Caffe, Waifu2x-Converter-CPP, Waifu2x-NCNN-Vulkan, Anime4K, Video2x, Dandere2x, and the list goes on! 
-                            <br><br>In short if Waifu2x falls short of what satisfies your needs, then other third-party softwares/projects 
-                            will do just as well, if not better! It should be noted that Waifu2x's last release was in 2018, which is why many third-party softwares/projects are generally recommended over Waifu2x.
-                            Popular third-party softwares include Waifu2x-Caffe, Waifu2x-NCNN-Vulkan, Waifu2x-Converter-CPP, and Video2x. 
-                            <br><br>This website will go over a more basic overview of Waifu2x, Waifu2x-Caffe, and Video2x with examples and comparisons.
+                        <p>There's a pretty good reason why Gigapixel AI is a paid software as it is a pretty great
+                            software overall. The greatest difference between the two would be the type of images it
+                            works best with; Gigapixel AI
+                            working better with 3D images or photography, while Waifu2x works best with 2D images or
+                            hand drawn images. Waifu2x has a demo application hosted on their website so platform
+                            compatibility isn't as big a concern.
+                            The Waifu2x site also has a simple yet limited interface if user's don't want to get into
+                            working with the command line interface(CLI).
+                            <br><br>A temporary solution to Waifu2x's weakness is to use their website, but the best and
+                            greatest thing about Waifu2x is the fact that it's a free open source project! In short
+                            there are many third party softwares based
+                            off Waifu2x, thus solving many of it's inherent limitations. Popular third-party
+                            softwares/projects based off Waifu2x includes
+                            Waifu2x-Caffe, Waifu2x-Converter-CPP, Waifu2x-NCNN-Vulkan, Anime4K, Video2x, Dandere2x, and
+                            the list goes on!
+                            <br><br>In short if Waifu2x falls short of what satisfies your needs, then other third-party
+                            softwares/projects
+                            will do just as well, if not better! It should be noted that Waifu2x's last release was in
+                            2018, which is why many third-party softwares/projects are generally recommended over
+                            Waifu2x.
+                            Popular third-party softwares include Waifu2x-Caffe, Waifu2x-NCNN-Vulkan,
+                            Waifu2x-Converter-CPP, and Video2x.
+                            <br><br>This website will go over a more basic overview of Waifu2x, Waifu2x-Caffe, and
+                            Video2x with examples and comparisons.
                         </p>
                     </div>
                 </div>
