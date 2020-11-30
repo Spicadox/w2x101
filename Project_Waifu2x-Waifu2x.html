@@ -7,6 +7,7 @@
     <title>Waifu2x 101 Basic</title>
     <link rel="icon" href="logo_mascot.png">
     <link rel="stylesheet" href="Project_Waifu2x-CSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Signika&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="floating-totop-button.min.css" rel="stylesheet" />
     <script src="floating-totop-button.min.js"></script>
@@ -14,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Menu navigation bar -->
     <nav class="menu">
         <ul>
             <li class="home_icon"><a href="index.html"><img id="home_logo" src="assets/images/Artboard 1.png"
@@ -24,6 +26,7 @@
             <li><a href="Project_Waifu2x-Video2x.html">Video2x 101</a></li>
         </ul>
     </nav>
+    <!-- Page banner which gives overview of the page -->
     <header class="home_header">
         <h1 class="header_title">Waifu2x</h1>
         <div class="header_content">
@@ -33,8 +36,10 @@
                 It is so popular that there have been many popular 3rd party software/project based off Waifu2x. Of
                 those 3rd party softwares, include Waifu2x-Caffe, Waifu2x-NCNN-Vulkan, Waifu2x-Converter-CPP, and
                 Video2x are the more popular ones.
-                Waifu2x has a demo application that can be found on their <a href="http://waifu2x.udp.jp/">website</a>
-                and a downloadable one from their <a href="https://github.com/nagadomi/waifu2x">github</a> repository.
+                Waifu2x has a demo application that can be found on their <a id="reference"
+                    href="http://waifu2x.udp.jp/" title="http://waifu2x.udp.jp/">website</a>
+                and a downloadable one from their <a href="https://github.com/nagadomi/waifu2x"
+                    title="https://github.com/nagadomi/waifu2x">github</a> repository.
                 Waifu2x is currently only compatible on Linux machines and the last big release was from Novemember 18,
                 2018.
                 Fret not as those 3rd party softwares perform just as well if not better! We'll be exploring the basic
@@ -46,26 +51,29 @@
             </figure>
         </div>
     </header>
+    <!-- The container of the page i.e the side margins -->
     <div class="container">
+        <!-- All information contained inside this div content -->
         <div class="content">
             <div class="introduction">
                 <h1 class="introduction_header">Waifu2x's Potential</h1>
                 <p class="introduction_intro">
                     Waifu2x is a popular open source software that makes use of super resolution to improve 2D image
                     quality.
-                    Not only does this software provide image <a
-                        href="https://www.howtogeek.com/427091/what-is-upscaling-on-a-tv/#:~:text=Upscaling%20Reduces%20Optical%20Resolution&text=The%20most%20basic%20is%20called,at%20its%20four%20neighboring%20pixels.">upscaling</a>,
+                    Not only does this software provide image <a id="reference"
+                        href="https://www.howtogeek.com/427091/what-is-upscaling-on-a-tv/"
+                        title="https://www.howtogeek.com/427091/what-is-upscaling-on-a-tv/">upscaling</a>,
                     but also provides noise reduction/removal. Unlike traditional upscalers,
                     Waifu2x's upscaler not only increases an image's resolution, but by utilizing deep convolutional
                     neural networks, its able to with suprising accuracy, correctly predict missing pixels.
-                    <!-- https://www.howtogeek.com/427091/what-is-upscaling-on-a-tv/#:~:text=Upscaling%20Reduces%20Optical%20Resolution&text=The%20most%20basic%20is%20called,at%20its%20four%20neighboring%20pixels.  -->
                     An example of Waifu2x in action can be seen in the image below which can also be found on Waifu2x's
                     github repository.
                     The first section shows how good Waifu2x's 2x upscale of the small image look compared to GIMP's
                     lanczos3 algorithm.
                     The next section shows how Waifu2x performs against GIMP's selective blur when working with a noisy
-                    image, and in this case, with <a
-                        href="https://en.wikipedia.org/wiki/Compression_artifact">compression artifacts</a>.
+                    image, and in this case, with <a id="reference"
+                        href="https://en.wikipedia.org/wiki/Compression_artifact"
+                        title="https://en.wikipedia.org/wiki/Compression_artifact">compression artifacts</a>.
                     GIMP's selective blur didn't do too bad, but Waifu2x's noise reduction is simply at another level!
                     This image doesn't show the original image before being compressed, resulting in these artifacts,
                     but based on the previous image we can assume that Waifu2x did a pretty solid job. In the final
@@ -83,13 +91,13 @@
                     exploring more examples of Waifu2x compared to other softwares and more information pertaining to
                     its upscaling and denoising feature.
                 </p>
-                <!-- Add js for magnification -->
+                <!-- Images for waifu2x -->
                 <figure class="introduction_figure">
-
                     <div class="example_figure">
                         <img src="assets/images/waifu2x-example.png" alt="waifu2x-example" id="waifu2x-example">
-                        <figcaption><a
-                                href="https://raw.githubusercontent.com/nagadomi/waifu2x/master/assets/images/slide.png">Simple
+                        <figcaption><a id="reference"
+                                href="https://raw.githubusercontent.com/nagadomi/waifu2x/master/assets/images/slide.png"
+                                title="https://raw.githubusercontent.com/nagadomi/waifu2x/master/assets/images/slide.png">Simple
                                 Infographic used by Waifu2x</a></figcaption>
                     </div>
                     <img src="assets/images/waifu2x-interface.png" alt="waifu2x-interface" id="waifu2x-interface">
@@ -100,6 +108,7 @@
             <div class="denoise_introduction"></div>
         </div>
     </div>
+    <!-- Copyright footer -->
     <footer>
         <div>
             <p class="copyright"><small>&copy; Copyright 2020 W2X101</small></p>

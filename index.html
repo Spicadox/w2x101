@@ -8,7 +8,7 @@
     <link rel="icon" href="logo_mascot.png">
     <link rel="stylesheet" href="Project_Waifu2x-CSS.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Signika&family=Comic+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Signika&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="floating-totop-button.min.css" rel="stylesheet" />
     <script src="floating-totop-button.min.js"></script>
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- Menu navigation bar -->
     <nav class="menu">
         <ul>
             <li class="home_icon"><a href="index.html"><img id="home_logo" src="assets/images/Artboard 1.png"
@@ -26,7 +27,7 @@
             <li><a href="Project_Waifu2x-Video2x.html">Video2x 101</a></li>
         </ul>
     </nav>
-
+    <!-- Page banner which gives overview of the page -->
     <header class="home_header">
         <h1 class="header_title">Super-Resolution</h1>
         <div class="header_content">
@@ -48,8 +49,11 @@
             </figure>
         </div>
     </header>
+    <!-- The container of the page i.e the side margins -->
     <div class="container">
+        <!-- All information contained inside this div content -->
         <div class="content">
+            <!-- Explain about upscaling -->
             <div class="upscale">
                 <h1 class="upscale_header">What is Upscaling?</h1>
                 <div class="upscale_content">
@@ -61,16 +65,19 @@
                         the user's specified resolution. The basic requirement to qualify as a upscaler is to just have
                         a low resolution media fill up said resolution on your monitor.
                         With the advancement of AI and the popularity of machine learning,
-                        <a href="https://machinelearningmastery.com/what-is-deep-learning/">deep learning</a>
+                        <a id="reference" href="https://machinelearningmastery.com/what-is-deep-learning/"
+                            title="https://machinelearningmastery.com/what-is-deep-learning/">deep learning</a>
                         (a subfield of machine learning) became extremely popular for upscaling softwares. To understand
                         how deep learning enhances
                         upscaling quality the information can be obtained from this
-                        <a
-                            href="https://medium.com/beyondminds/an-introduction-to-super-resolution-using-deep-learning-f60aff9a499d">Medium
+                        <a id="reference"
+                            href="https://medium.com/beyondminds/an-introduction-to-super-resolution-using-deep-learning-f60aff9a499d"
+                            title="https://medium.com/beyondminds/an-introduction-to-super-resolution-using-deep-learning-f60aff9a499d">Medium
                             article</a>.
                     </p>
                 </div>
             </div>
+            <!-- List of video resolutions -->
             <div class="resolutions_container">
                 <h2 class="resolution_header">List of Video Resolutions</h2>
                 <div class="resolutions_content">
@@ -90,6 +97,7 @@
                     </figure>
                 </div>
             </div>
+            <!-- Explaining about denoising images -->
             <div class="denoise_container">
                 <h1 class="denoise_header">What is Denoising?</h1>
                 <div class="denoise_content">
@@ -102,20 +110,24 @@
                         <img id="noise_example" src="assets/images/noise_example.jpg" alt="periodic_noise_example">
                         <figcaption>Example of periodic noise(a type of interference noise) on the left.
                             <br>Image via
-                            <a
-                                href="https://www.premiumbeat.com/blog/understanding-film-video-image-noise/">PremiumBeat.</a>
+                            <a id="reference"
+                                href="https://www.premiumbeat.com/blog/understanding-film-video-image-noise/"
+                                title="https://www.premiumbeat.com/blog/understanding-film-video-image-noise/">PremiumBeat.</a>
                         </figcaption>
                     </figure>
                 </div>
             </div>
+            <!-- Comparing gigapixel AI and waifu2x -->
             <div class="softwares_container">
                 <h1 class="softwares_header">Waifu2x and Gigapixel AI</h1>
                 <div class="softwares_content">
                     <p>
                         Having gone through basic ideas of upscaling and denoising to get that perfect image, what
                         softwares provide great upscaling and denoising?
-                        Both <a href="https://github.com/nagadomi/waifu2x">Waifu2x</a> and
-                        <a href="https://topazlabs.com/gigapixel-ai/">Gigapixel AI</a> are great contenders for being
+                        Both <a id="reference" href="https://github.com/nagadomi/waifu2x"
+                            title="https://github.com/nagadomi/waifu2x">Waifu2x</a> and
+                        <a id="reference" href="https://topazlabs.com/gigapixel-ai/"
+                            title="https://topazlabs.com/gigapixel-ai/">Gigapixel AI</a> are great contenders for being
                         the
                         best softwares to achieve great looking images via super-resolution imaging. So, what's the
                         difference between the two?
@@ -181,6 +193,7 @@
             </div>
         </div>
     </div>
+    <!-- Copyright footer -->
     <footer>
         <div>
             <p class="copyright"><small>&copy; Copyright 2020 W2X101</small></p>
