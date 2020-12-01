@@ -18,7 +18,9 @@ $(document).ready(function () {
     });
 
     // JqueryUI Tooltip
-    $("#reference").tooltip();
+    $(function () {
+        $("#reference").tooltip();
+    });
 
     // Allows for menu bar show on scroll up
     var previousScroll = window.pageYOffset;
