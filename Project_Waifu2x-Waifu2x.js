@@ -35,4 +35,26 @@ $(document).ready(function () {
         }
         previousScroll = currentScroll;
     };
+
+    //Music player: https://www.jqueryscript.net/other/single-button-audio-player.html
+    $.ajax({
+        type: "get",
+        url: "musicInfo.json",
+        error: function (xhr, status, error) {
+            alert("Error: " + xhr.status + " - " + error);
+        },
+        dataType: "json",
+        success: $.getJSON("musicInfo.json", function (data) {
+            $.each(data, function () {
+                $.each(this, function (key, value) {
+                    $('#musicPlayer').buttonAudioPlayer({
+                        src: value.audio,
+                        loop: true,
+                        loopStart: false, // in seconds
+                        loopEnd: false // in seconds
+                    });
+                });
+            });
+        })
+    });
 });

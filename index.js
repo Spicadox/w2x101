@@ -62,11 +62,11 @@ $(document).ready(function () {
             $.each(data, function () {
                 $.each(this, function (key, value) {
                     $("#tabs-1").html("<p>" + value.description + "</p><img id='popupImage' src=" + value.image + " height=200px height=200px />");
-                    $("#tabs-2").html("<p>" + value.about_me + "</p><img src=" + value.image2 + " />" + 
-                    "<img src=" + value.image3 + " />" + 
-                    "<img src=" + value.image4 + " />" + 
-                    "<img src=" + value.image5 + " />" + 
-                    "<img src=" + value.image6 + " />");
+                    $("#tabs-2").html("<p>" + value.about_me + "</p><img src=" + value.image2 + " />" +
+                        "<img src=" + value.image3 + " />" +
+                        "<img src=" + value.image4 + " />" +
+                        "<img src=" + value.image5 + " />" +
+                        "<img src=" + value.image6 + " />");
                 });
             });
         })
@@ -76,7 +76,6 @@ $(document).ready(function () {
     var previousScroll = window.pageYOffset;
     window.onscroll = function () {
         var currentScroll = window.pageYOffset;
-        console.log("currentScroll: ", currentScroll);
         if (previousScroll > currentScroll) {
             $(".menu").css({ top: "0px" });
         }
@@ -86,14 +85,26 @@ $(document).ready(function () {
         previousScroll = currentScroll;
     };
 
-    $(function(){
-        $('#musicPlayer').buttonAudioPlayer({
-          src: "リコーダービート2+たぬきちの冒険+漢祭り.mp3",
-          loop: true,
-          loopStart: false, // in seconds
-          loopEnd: false // in seconds
-        });
-      });
-
+    //Music player: https://www.jqueryscript.net/other/single-button-audio-player.html
+    $.ajax({
+        type: "get",
+        url: "musicInfo.json",
+        error: function (xhr, status, error) {
+            alert("Error: " + xhr.status + " - " + error);
+        },
+        dataType: "json",
+        success: $.getJSON("musicInfo.json", function (data) {
+            $.each(data, function () {
+                $.each(this, function (key, value) {
+                    $('#musicPlayer').buttonAudioPlayer({
+                        src: value.audio,
+                        loop: true,
+                        loopStart: false, // in seconds
+                        loopEnd: false // in seconds
+                    });
+                });
+            });
+        })
+    });
 });
 
