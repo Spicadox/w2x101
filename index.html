@@ -12,7 +12,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="floating-totop-button.min.css" rel="stylesheet" />
     <script src="floating-totop-button.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="index.js"></script>
+
+
+    <link rel="stylesheet" href="single-button-audio-player/dist/jquery.button-audio-player.css" />
+<script src="single-button-audio-player/cdn/jquery.slim.min.js"></script>
+<script src="single-button-audio-player/dist/jquery.button-audio-player.js"></script>
 </head>
 
 <body>
@@ -25,10 +33,24 @@
             <li><a href="Project_Waifu2x-Waifu2x.html">Waifu2x 101</a></li>
             <li><a href="Project_Waifu2x-Waifu2xCaffe.html">Waifu2x-Caffe 101</a></li>
             <li><a href="Project_Waifu2x-Video2x.html">Video2x 101</a></li>
+            <li id="musicPlayer"></li>
         </ul>
+        
     </nav>
     <!-- Page banner which gives overview of the page -->
     <header class="home_header">
+        <div id="dialog" title="Site Description">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">About the Site</a></li>
+                    <li><a href="#tabs-2">About Me</a></li>
+                </ul>
+                <div id="tabs-1">
+                </div>
+                <div id="tabs-2">
+                </div>
+            </div>
+        </div>
         <h1 class="header_title">Super-Resolution</h1>
         <div class="header_content">
             <p class="header_intro">

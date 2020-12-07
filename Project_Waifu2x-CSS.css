@@ -230,6 +230,12 @@ h3 {
     flex-direction: column;
     padding-left: 25px;
 }
+#tabs-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 /* Waifu2x Page */
 .introduction_figure {
