@@ -34,7 +34,6 @@ $(document).ready(function () {
     var previousScroll = window.pageYOffset;
     window.onscroll = function () {
         var currentScroll = window.pageYOffset;
-        console.log("currentScroll: ", currentScroll);
         if (previousScroll > currentScroll) {
             $(".menu").css({ top: "0px" });
         }
