@@ -25,6 +25,12 @@ $(document).ready(function () {
         // from 1 to 16
         iconShadow: 4
     });
+
+    // JqueryUI Tooltip
+    $(function () {
+        $(".reference").tooltip();
+    });
+    
     // Allows for menu bar show on scroll up
     var previousScroll = window.pageYOffset;
     window.onscroll = function () {

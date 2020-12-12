@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     // JqueryUI Tooltip
     $(function () {
-        $("#reference").tooltip();
+        $(".reference").tooltip();
     });
 
     // Allows for menu bar show on scroll up

@@ -16,13 +16,16 @@
     <script src="Project_Waifu2x-Video2x.js"></script>
     <link rel="stylesheet" href="single-button-audio-player/dist/jquery.button-audio-player.css" />
     <script src="single-button-audio-player/dist/jquery.button-audio-player.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
     <!-- Menu navigation bar -->
     <nav class="menu">
         <ul>
-            <li class="home_icon"><a href="index.html"><img id="home_logo" src="assets/images/Artboard 1.png"
+            <li class="home_icon"><a href="index.html"><img id="home_logo" src="assets/images/Artboard_1.png"
                         alt="logo"> </a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="Project_Waifu2x-Waifu2x.html">Waifu2x 101</a></li>
@@ -36,14 +39,14 @@
         <h1 class="header_title">Video2x</h1>
         <div class="header_content">
             <p class="header_intro">
-                Video2x is a super-resolution imaging software with 1.9k stars on their <a id="reference"
+                Video2x is a super-resolution imaging software with 1.9k stars on their <a class="reference"
                     href="https://github.com/k4yt3x/video2x" title="https://github.com/k4yt3x/video2x">github
                     repository</a>. Video2x utilizes other 3rd party
                 softwares as dependencies
                 like Waifu2x-Caffe, Waifu2x Converter CPP, Waifu2x NCNN Vulkan, SMRMD NCNN Vulkan, RealSR NCNN Vulkan,
                 and Anime4KCPP. It's true value lies in its ability to upscale and work with more media files. Not only
                 does Video2x work with images and gifs, but also video files.
-                This is possible because of its use of <a id="reference" href="https://ffmpeg.org/"
+                This is possible because of its use of <a class="reference" href="https://ffmpeg.org/"
                     title="https://ffmpeg.org/">FFmpeg</a>, which is a very
                 powerful
                 media processor. Video2x uses FFMPEG to extract all image frames from a video and process each of the
@@ -51,7 +54,7 @@
                 container. Video2x offers both a GUI and CLI.
             </p>
             <figure class="header_figure">
-                <img src="assets/images/Video2X Banner.png" alt="waifu2x-bg">
+                <img src="assets/images/Video2X_Banner.png" alt="waifu2x-bg">
                 <figcaption>Video2x's Logo</figcaption>
             </figure>
         </div>
@@ -145,14 +148,14 @@
                         users to specify video, audio, and data stream mapping.
                     </p>
                     <h3>Gifski Settings</h3>
-                    <p>The Gifski settings makes use of <a id="reference" href="https://gif.ski/"
+                    <p>The Gifski settings makes use of <a class="reference" href="https://gif.ski/"
                             title="https://gif.ski/">Gifski</a>, a great software for gif
                         encoding. The main interest in this setting is to specify the quality, where users can specify
                         the gif quality.
                     </p>
                     <h3>Tools Settings</h3>
                     <p>
-                        The last settings is the tools settings which involves <a id="reference"
+                        The last settings is the tools settings which involves <a class="reference"
                             href="https://ffmpeg.org/ffprobe.html" title="https://ffmpeg.org/ffprobe.html">FFprobe</a>.
                         This allows users to use FFprobe without
                         going through the CLI. All the user has to do is drag the video into the box in order to obtain
@@ -163,7 +166,6 @@
             <!-- Upscaled video examples -->
             <div class="video_examples">
                 <div class="video_upscale_example">
-                    <h2></h2>
                 </div>
                 <div class="video_denoise_example">
                 </div>
@@ -173,27 +175,27 @@
                         <div class="dbz_source_example">
 
                             <h2 class="video_source_header">Source Video: 360p</h2>
-                            <video src="assets/videos/Dragon Ball Z Opening (Japanese-Creditless) HQ-ElqB359i_Os.mp4"
-                                controls id="dbz_source" id="dbz_source">Source Video</video>
+                            <video src="assets/videos/Dragon_Ball_Z_Opening(Japanese-Creditless)HQ-ElqB359i_Os.mp4"
+                                controls id="dbz_source">Source Video</video>
 
 
                         </div>
                         <div class="dbz_examples">
                             <h2 class="video_example_header">New Videos Upscaled using Waifu2x NCNN Vulkan at 1080p</h2>
                             <video
-                                src="assets/videos/Vulkan/Vulkan x3 N0/Dragon Ball Z Opening (Japanese-Creditless) HQ-ElqB359i_Os_output.mp4"
+                                src="assets/videos/Vulkan/Vulkan_x3_N0/Dragon_Ball_Z_Opening(Japanese-Creditless)HQ-ElqB359i_Os_output.mp4"
                                 controls>3x Upscale and Denoise Level 0</video>
                             <p class="video_info">3x Upscale and Denoise Level 0</p>
                             <video
-                                src="assets/videos/Vulkan/Vulkan x3 N1/Dragon Ball Z Opening (Japanese-Creditless) HQ-ElqB359i_Os_output.mp4"
+                                src="assets/videos/Vulkan/Vulkan_x3_N1/Dragon_Ball_Z_Opening(Japanese-Creditless)HQ-ElqB359i_Os_output.mp4"
                                 controls>3x Upscale and Denoise Level 1</video>
                             <p class="video_info">3x Upscale and Denoise Level 1</p>
                             <video
-                                src="assets/videos/Vulkan/Vulkan x3 N2/Dragon Ball Z Opening (Japanese-Creditless) HQ-ElqB359i_Os_output.mp4"
+                                src="assets/videos/Vulkan/Vulkan_x3_N2/Dragon_Ball_Z_Opening(Japanese-Creditless)HQ-ElqB359i_Os_output.mp4"
                                 controls>3x Upscale and Denoise Level 2</video>
                             <p class="video_info">3x Upscale and Denoise Level 2</p>
                             <video
-                                src="assets/videos/Vulkan/Vulkan x3 N3/Dragon Ball Z Opening (Japanese-Creditless) HQ-ElqB359i_Os_output.mp4"
+                                src="assets/videos/Vulkan/Vulkan_x3_N3/Dragon_Ball_Z_Opening(Japanese-Creditless)HQ-ElqB359i_Os_output.mp4"
                                 controls>3x Upscale and Denoise Level 3</video>
                             <p class="video_info">3x Upscale and Denoise Level 3</p>
                         </div>

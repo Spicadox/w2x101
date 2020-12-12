@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     // JqueryUI Tooltip
     $(function () {
-        $("#reference").tooltip();
+        $(".reference").tooltip();
     });
 
     // JqueryUI dialog box
@@ -32,11 +32,6 @@ $(document).ready(function () {
             maxWidth: 800
         });
     });
-
-    //   $(".menu").click(function () {
-    //     $("#dialog").destroy();
-    //     $("#tabs").destroy();
-    //   });
 
     //JqueryUI tabs widget with Ajax
     $(function () {

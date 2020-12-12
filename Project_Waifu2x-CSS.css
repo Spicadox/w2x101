@@ -47,7 +47,7 @@ li {
 }
 .menu li {
     display: inline-flex;
-    margin-inline-end: 50px;
+    margin-right: 50px;
 
     /* justify-content: center; */
     /* background-color: fuchsia; */
@@ -88,7 +88,7 @@ li {
 }
 #home_logo {
     max-width: 150px;
-    max-height: auto;
+    /* max-height: auto; */
 }
 header {
     /* display: flex; */
@@ -142,7 +142,7 @@ h3 {
     margin: auto;
     margin-left: 30px;
     max-width: 700px;
-    max-height: auto;
+    /* max-height: auto; */
 
     flex-shrink: 1;
 }
@@ -190,7 +190,7 @@ h3 {
     margin: auto;
     margin-left: 150px;
     max-width: 700px;
-    max-height: auto;
+    /* max-height: auto; */
 
     flex-shrink: 1;
 }
@@ -209,7 +209,7 @@ h3 {
 }
 .comparison figcaption {
     text-align: center;
-    font-weight: 2;
+    /* font-weight: 2; */
     font-size: 20px;
     padding: 10px;
 }
@@ -243,7 +243,7 @@ h3 {
     margin: auto;
     /* change back to 1200px? */
     max-width: fit-content;
-    max-height: auto;
+    /* max-height: auto; */
     align-items: flex-start;
     justify-content: center;
 }
@@ -268,7 +268,7 @@ h3 {
     display: flex;
     margin: auto;
     max-width: 1200px;
-    max-height: auto;
+    /* max-height: auto; */
     justify-content: center;
 }
 
@@ -287,6 +287,12 @@ h3 {
     max-width: 218px;
     height: auto;  
 }
+.tta_fig_example p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    display: inline;
+}
+
 
 /* .cafee_upscale_denoise_examples {
     max-width: auto;

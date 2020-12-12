@@ -14,13 +14,16 @@
     <script src="Project_Waifu2x-Waifu2x.js"></script>
     <link rel="stylesheet" href="single-button-audio-player/dist/jquery.button-audio-player.css" />
     <script src="single-button-audio-player/dist/jquery.button-audio-player.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
     <!-- Menu navigation bar -->
     <nav class="menu">
         <ul>
-            <li class="home_icon"><a href="index.html"><img id="home_logo" src="assets/images/Artboard 1.png"
+            <li class="home_icon"><a href="index.html"><img id="home_logo" src="assets/images/Artboard_1.png"
                         alt="logo"> </a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="Project_Waifu2x-Waifu2x.html">Waifu2x 101</a></li>
@@ -39,9 +42,9 @@
                 It is so popular that there have been many popular 3rd party software/project based off Waifu2x. Of
                 those 3rd party softwares, include Waifu2x-Caffe, Waifu2x-NCNN-Vulkan, Waifu2x-Converter-CPP, and
                 Video2x are the more popular ones.
-                Waifu2x has a demo application that can be found on their <a id="reference"
+                Waifu2x has a demo application that can be found on their <a class="reference"
                     href="http://waifu2x.udp.jp/" title="http://waifu2x.udp.jp/">website</a>
-                and a downloadable one from their <a href="https://github.com/nagadomi/waifu2x"
+                and a downloadable one from their <a class="reference" href="https://github.com/nagadomi/waifu2x"
                     title="https://github.com/nagadomi/waifu2x">github</a> repository.
                 Waifu2x is currently only compatible on Linux machines and the last big release was from Novemember 18,
                 2018.
@@ -63,7 +66,7 @@
                 <p class="introduction_intro">
                     Waifu2x is a popular open source software that makes use of super resolution to improve 2D image
                     quality.
-                    Not only does this software provide image <a id="reference"
+                    Not only does this software provide image <a class="reference"
                         href="https://www.howtogeek.com/427091/what-is-upscaling-on-a-tv/"
                         title="https://www.howtogeek.com/427091/what-is-upscaling-on-a-tv/">upscaling</a>,
                     but also provides noise reduction/removal. Unlike traditional upscalers,
@@ -74,7 +77,7 @@
                     The first section shows how good Waifu2x's 2x upscale of the small image look compared to GIMP's
                     lanczos3 algorithm.
                     The next section shows how Waifu2x performs against GIMP's selective blur when working with a noisy
-                    image, and in this case, with <a id="reference"
+                    image, and in this case, with <a class="reference"
                         href="https://en.wikipedia.org/wiki/Compression_artifact"
                         title="https://en.wikipedia.org/wiki/Compression_artifact">compression artifacts</a>.
                     GIMP's selective blur didn't do too bad, but Waifu2x's noise reduction is simply at another level!
@@ -97,10 +100,10 @@
                 <figure class="introduction_figure">
                     <div class="example_figure">
                         <img src="assets/images/waifu2x-example.png" alt="waifu2x-example" id="waifu2x-example">
-                        <figcaption><a id="reference"
+                        <a class="reference"
                                 href="https://raw.githubusercontent.com/nagadomi/waifu2x/master/assets/images/slide.png"
                                 title="https://raw.githubusercontent.com/nagadomi/waifu2x/master/assets/images/slide.png">Simple
-                                Infographic used by Waifu2x</a></figcaption>
+                                Infographic used by Waifu2x</a>
                     </div>
                     <img src="assets/images/waifu2x-interface.png" alt="waifu2x-interface" id="waifu2x-interface">
                     <figcaption><a id="waifu2x_gui"></a></figcaption>
