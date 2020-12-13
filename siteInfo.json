@@ -1,7 +1,7 @@
 {"siteInfo":[
 	{
 		"description": "This website will give a brief overview on super-resolution and softwares that utilize this idea. The software that will be discussed includes Waifu2x, Waifu2x-Caffe, and Video2x. There will be examples of images and videos that has been ran through these software to get a better idea of well these software perform. This site will go through briefly on the GUI's of these software as oppose to the CUI. Overall, this site is intended to help those new to using these super-resolution software and give them a better idea on the open-source software such as Waifu2x and it's 3rd-party derivatives.",
-		"about_me": "An tech enthusiast that is always out learning new and cool things. When I first heard about this software that could improve image quality for anime art style, I jumped right in and started learning more! I wanted to inform others about this amazing software and so created a software to show others not just about Waifu2x and its 3rd party derivatives, but the power of super-resolution.",
+		"about_me": "A tech enthusiast that is always out learning new and cool things. When I first heard about this software that could improve image quality for anime art style, I jumped right in and started learning more! I wanted to inform others about this amazing software and so created a software to show others not just about Waifu2x and its 3rd party derivatives, but the power of super-resolution.",
         "image": "assets/images/logo.png",
         "image2": "assets/images/writing-gem-head.gif",
         "image3": "assets/images/hamster-eat.gif",
