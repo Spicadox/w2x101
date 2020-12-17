@@ -22,50 +22,63 @@ $(document).ready(function () {
         $(".reference").tooltip();
     });
 
-    // JqueryUI dialog box
-    $(function () {
-        $("#dialog").dialog({
-            height: 700,
-            width: 1000,
-            minWidth: 400,
-            maxHeight: 1000,
-            maxWidth: 800
-        });
-    });
 
-    //JqueryUI tabs widget with Ajax
-    $(function () {
-        $("#tabs").tabs({
-            beforeLoad: function (event, ui) {
-                ui.jqXHR.fail(function () {
-                    ui.panel.html(
-                        "Couldn't load this tab. We'll try to fix this as soon as possible. " +
-                        "If this wouldn't be a demo.");
-                });
-            }
-        });
-    });
-    //Ajax for displaying information on popup
-    $.ajax({
-        type: "get",
-        url: "siteInfo.json",
-        error: function (xhr, status, error) {
-            alert("Error: " + xhr.status + " - " + error);
-        },
-        dataType: "json",
-        success: $.getJSON("siteInfo.json", function (data) {
-            $.each(data, function () {
-                $.each(this, function (key, value) {
-                    $("#tabs-1").html("<p>" + value.description + "</p><img id='popupImage' src=" + value.image + " height=200px height=200px />");
-                    $("#tabs-2").html("<p>" + value.about_me + "</p><img src=" + value.image2 + " />" +
-                        "<img src=" + value.image3 + " />" +
-                        "<img src=" + value.image4 + " />" +
-                        "<img src=" + value.image5 + " />" +
-                        "<img src=" + value.image6 + " />");
-                });
+    // Use localStorage to only show site description popup for first-time users
+    var siteDescriptionPopup = localStorage.getItem("siteDescriptionPopup");
+    console.log(localStorage.getItem("siteDescriptionPopup") === "true");
+
+    if (localStorage.getItem("siteDescriptionPopup") === "true") {
+        $("#dialog").hide();
+    }
+    else {
+        localStorage.setItem("siteDescriptionPopup", true);
+
+        // JqueryUI dialog box
+        $(function () {
+            $("#dialog").dialog({
+                height: 700,
+                width: 1000,
+                minWidth: 400,
+                maxHeight: 1000,
+                maxWidth: 800
             });
-        })
-    });
+        });
+
+        //JqueryUI tabs widget with Ajax
+        $(function () {
+            $("#tabs").tabs({
+                beforeLoad: function (event, ui) {
+                    ui.jqXHR.fail(function () {
+                        ui.panel.html(
+                            "Couldn't load this tab. We'll try to fix this as soon as possible. " +
+                            "If this wouldn't be a demo.");
+                    });
+                }
+            });
+        });
+
+        //Ajax for displaying information on popup
+        $.ajax({
+            type: "get",
+            url: "siteInfo.json",
+            error: function (xhr, status, error) {
+                alert("Error: " + xhr.status + " - " + error);
+            },
+            dataType: "json",
+            success: $.getJSON("siteInfo.json", function (data) {
+                $.each(data, function () {
+                    $.each(this, function (key, value) {
+                        $("#tabs-1").html("<p>" + value.description + "</p><img id='popupImage' src=" + value.image + " height=200px height=200px />");
+                        $("#tabs-2").html("<p>" + value.about_me + "</p><img src=" + value.image2 + " />" +
+                            "<img src=" + value.image3 + " />" +
+                            "<img src=" + value.image4 + " />" +
+                            "<img src=" + value.image5 + " />" +
+                            "<img src=" + value.image6 + " />");
+                    });
+                });
+            })
+        });
+    }
 
     // Allows for menu bar show on scroll up
     var previousScroll = window.pageYOffset;
